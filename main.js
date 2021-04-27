@@ -37,7 +37,7 @@ new Vue({
   mounted() {
     // axiousを用いてスプレットシート（APIサーバ化）から値を取得
     axios
-      .get('https://script.google.com/macros/s/AKfycbxB4SeR7oTNabHwdyWj-_y73n1Nroj23DNOmRvEXWwRirixaoc/exec')
+      .get('https://script.google.com/macros/s/AKfycbzEUPGEwVBwCa1MyTlEvlIqFu9_wjjv4TfXEYscX7ox0UD-meM/exec')
       .then(response => {
         this.data = response.data
       })
