@@ -1,0 +1,22 @@
+<meta http-equiv="content-type" charset="utf-8">
+
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<div id="app">
+  <h3 class="vue-title">物品一覧</h3>
+  <a href="password.html">物品管理</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ZXyq2euFd88T1hagCb5wMVC-5My9Jwpfb4M3nHpdUc_WVA/viewform?usp=sf_link">貸出手続きはこちら</a>
+  <v-client-table :columns="columns" :data="data" :options="options">
+
+    <!-- <a slot="画像" slot-scope="props" :href="props.row.画像" target="'_blank'">
+        <img :src="props.row.画像" width="40" height="40" />
+      </a> -->
+
+  </v-client-table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.8/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+<script src="https://rawgit.com/matfish2/vue-tables-2/master/dist/vue-tables-2.min.js"></script>
+<script src="list.js"></script>
